@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/js.js"></script>
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mensaje"></div>
+        <h1>Library</h1>
+        <div class="lateral">
+            <button type="button"> Add Book
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" widht="35" height="35">
+                    <path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="white"/>
+                </svg>
+            </button>            
+        </div>
+        <div class="tabla">
+                <div class="id">Nro Identif</div>
+                <div class="title">Title</div>
+                <div class="author">Author</div>
+                <div class="pages">Pages</div>                
+                <label class="radio">Read?</label>                
+                <label class="deleteBook">Delete?</label>                          
+        </div>        
+        <div class="contenedorLibros"></div>
+        
+        <dialog class="agregarLibro">
+            <form>
+                <div class="general">
+                    <div class="alineacion">
+                        <label class="nombreLibro">Book name</label>
+                        <input type="text" class="nombreLibro">
+                    </div>
+                    <div class="alineacion">
+                        <label class="authorLibro">Author</label>
+                        <input type="text" class="authorLibro">
+                    </div>
+                    <div class="alineacion">
+                        <label class="pagesLibro">Pages?</label>
+                        <input type="number" class="pagesLibro" min="1">
+                    </div>             
+                    <div class="alineacion">
+                        <label class="isOrNotReady">is Ready?</label>
+                        <input type="checkbox" class="checkReady" >
+                    </div>                            
+                </div>
+                <div class="botonForm">
+                    <button value="cancel" formmethod="dialog">Cancel</button>
+                    <button id="confirm" value="default" type="button">Confirm</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>

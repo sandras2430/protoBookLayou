@@ -41,6 +41,9 @@ Rendering: The mostrarLibro(miLibreria) function clears and recreates the DOM co
 Event Handling: Event delegation is used on the main container to handle clicks on the delete checkboxes, which is efficient for dynamically generated elements.
 Limitations and Future Improvements
 
+**Link**
+https://sandras2430.github.io/protoBookLayou/
+
 **Known Limitations**
 Desktop-Optimized Design: The layout is optimized for desktop and does not adapt to mobile screen sizes. This was a deliberate decision to focus on implementing a complex CSS Grid layout.
 Data Persistence: Book data is stored in an in-memory array. If the page is reloaded, all changes will be lost.
